@@ -12,3 +12,5 @@ ng new my-app
 cd my-app
 ng serve
 ```
+
+<http://localhost:4200>
