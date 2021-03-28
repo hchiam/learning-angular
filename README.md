@@ -15,6 +15,12 @@ cd my-app
 ng serve
 ```
 
+Or triple-click to select this one-liner:
+
+```bash
+npm install -g @angular/cli && ng new my-app && cd my-app && ng serve
+```
+
 <http://localhost:4200>
 
 ## Working Example:
