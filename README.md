@@ -2,6 +2,8 @@
 
 Just one of the things I'm learning. <https://github.com/hchiam/learning>
 
+Angular comes with a CLI and comes with [TypeScript](https://www.typescriptlang.org/).
+
 ## Minimal:
 
 Tutorial I'll be following: <https://angular.io/start>
