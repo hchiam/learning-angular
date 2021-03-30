@@ -36,6 +36,8 @@ Tutorial I'll be following: <https://angular.io/start>
 ```bash
 cd angular-fhxvfx
 yarn
-yarn build
+# yarn build
 yarn start # runs ng serve
 ```
+
+http://localhost:4200
