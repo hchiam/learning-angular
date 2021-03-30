@@ -8,6 +8,8 @@ Angular comes with a CLI and comes with [TypeScript](https://www.typescriptlang.
 
 Tutorial I'll be following: <https://angular.io/start>
 
+<https://stackblitz.com/angular/anddyavxapb?file=src%2Fapp%2Fapp.component.ts>
+
 Also try [Angular CLI](https://cli.angular.io/):
 
 ```bash
