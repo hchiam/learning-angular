@@ -6,11 +6,7 @@ Angular comes with a CLI and comes with [TypeScript](https://www.typescriptlang.
 
 ## Minimal:
 
-Tutorial I'll be following: <https://angular.io/start>
-
-<https://stackblitz.com/angular/anddyavxapb?file=src%2Fapp%2Fapp.component.ts>
-
-Also try [Angular CLI](https://cli.angular.io/):
+Using [Angular CLI](https://cli.angular.io/):
 
 ```bash
 npm install -g @angular/cli
@@ -27,6 +23,19 @@ npm install -g @angular/cli && ng new my-app && cd my-app && ng serve
 
 <http://localhost:4200>
 
-## Working Example:
+## Older work:
 
 Following a YouTube tutorial for Angular 8: <https://github.com/hchiam/learning-angular8>
+
+## Longer intro tutorial:
+
+Tutorial I'll be following: <https://angular.io/start>
+
+<https://stackblitz.com/angular/anddyavxapb?file=src%2Fapp%2Fapp.component.ts>
+
+```bash
+cd angular-fhxvfx
+yarn
+yarn build
+yarn start # runs ng serve
+```
