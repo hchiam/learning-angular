@@ -41,3 +41,21 @@ yarn start # runs ng serve
 ```
 
 http://localhost:4200
+
+Event binding example: `(click)="share()"`
+
+Property binding example: `[title]="product.name + ' details'"`
+
+Structural directive examples: `*ngFor="let product of products"` and `*ngIf="product.description"`
+
+To start understanding the files more, start here: `/src/app/product-list` --> the TS file links to the HTML and CSS files with:
+
+```ts
+@Component({
+  selector: "app-product-list", // <app-product-list> tag in DOM
+  templateUrl: "./product-list.component.html",
+  styleUrls: ["./product-list.component.css"],
+})
+```
+
+If you change the `selector` to `".app-product-list"` then it'll be `<div class="app-product-list">` in the DOM.
