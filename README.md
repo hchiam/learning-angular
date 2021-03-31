@@ -81,6 +81,8 @@ If you change the `selector` to `".app-product-list"` then it'll be `<div class=
 
 You can generate a component with `ng generate component component-name` or with `ng g component component-name` (https://angular.io/cli/generate#component). It'll create a folder with 4 files in it (.css, .html, .spec.ts, and .ts).
 
+I didn't have to explicitly import TS or HTML files. It just figured it out by the consistent naming! I tried sibling folders under `/app` and also tried moving the child component's folder inside its parent component's folder, and it also worked! Just use `ng g component component-name`!
+
 ## Routing/Navigation
 
 https://angular.io/start/start-routing
