@@ -42,13 +42,17 @@ yarn start # runs ng serve
 
 http://localhost:4200
 
-Event binding example: `(click)="share()"`
-
 Structural directive examples: `*ngFor="let product of products"` and `*ngIf="product.description"`
 
 Property binding example: `[title]="product.name + ' details'"`
 
 Custom property binding example: `[product]="product"`
+
+Event binding example: `(click)="share()"`
+
+Custom event binding example: `(notify)="onNotify()"`
+
+- this can be combined with the child component's `@Output() notify = new EventEmitter();` (TS) and `(click)="notify.emit()"` (HTML), and then this will trigger the child component's `(notify)="onNotify()"` (HTML) that is written inside the parent component's markup (HTML) to trigger the parent's `onNotify()`.
 
 To start understanding the files more, start here: `/src/app/product-list` --> the TS file links to the HTML and CSS files with:
 
@@ -68,7 +72,8 @@ export class ProductAlertsComponent implements OnInit {
   @Input() product;
   // the @Output() decorator combined with EventEmitter
   // lets us trigger an event with the [notify] prop changes,
-  // and you can do (click)="notify.emit()"
+  // and you can do (click)="notify.emit()" in the child HTML,
+  // and (notify)="onNotify()" in the parent HTMl will run
   @Output() notify = new EventEmitter();
 
   constructor() {}
