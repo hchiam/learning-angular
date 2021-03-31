@@ -80,3 +80,13 @@ export class ProductAlertsComponent implements OnInit {
 If you change the `selector` to `".app-product-list"` then it'll be `<div class="app-product-list">` in the DOM.
 
 You can generate a component with `ng generate component component-name` or with `ng g component component-name` (https://angular.io/cli/generate#component). It'll create a folder with 4 files in it (.css, .html, .spec.ts, and .ts).
+
+## Routing/Navigation
+
+https://angular.io/start/start-routing
+
+For example, associating a URL path with a component.
+
+## Deployment/building/hosting, using Firebase, etc.
+
+https://angular.io/start/start-deployment
