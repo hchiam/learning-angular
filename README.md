@@ -44,18 +44,33 @@ http://localhost:4200
 
 Event binding example: `(click)="share()"`
 
+Structural directive examples: `*ngFor="let product of products"` and `*ngIf="product.description"`
+
 Property binding example: `[title]="product.name + ' details'"`
 
-Structural directive examples: `*ngFor="let product of products"` and `*ngIf="product.description"`
+Custom property binding example: `[product]="product"`
 
 To start understanding the files more, start here: `/src/app/product-list` --> the TS file links to the HTML and CSS files with:
 
 ```ts
+// this is a decorator:
 @Component({
   selector: "app-product-list", // <app-product-list> tag in DOM
   templateUrl: "./product-list.component.html",
   styleUrls: ["./product-list.component.css"],
 })
+// (this decorator indicates that the class in the later lines is a component)
+```
+
+```ts
+export class ProductAlertsComponent implements OnInit {
+  // the @Input() decorator indicates it's data passed in from the component's parent
+  @Input() product;
+
+  constructor() {}
+
+  ngOnInit() {}
+}
 ```
 
 If you change the `selector` to `".app-product-list"` then it'll be `<div class="app-product-list">` in the DOM.
