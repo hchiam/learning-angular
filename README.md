@@ -1,6 +1,6 @@
 # Learning Angular (not AngularJS)
 
-Just one of the things I'm learning. <https://github.com/hchiam/learning>
+Just one of the things I'm learning. <https://github.com/hchiam/learning> and <https://github.com/hchiam/learning-frameworks>
 
 Angular comes with a CLI and comes with [TypeScript](https://www.typescriptlang.org/).
 
