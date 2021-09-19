@@ -4,6 +4,8 @@ Just one of the things I'm learning. <https://github.com/hchiam/learning> and <h
 
 Angular comes with a CLI and comes with [TypeScript](https://www.typescriptlang.org/).
 
+<https://angular.io/guide/what-is-angular>
+
 ## Minimal:
 
 Using [Angular CLI](https://cli.angular.io/):
