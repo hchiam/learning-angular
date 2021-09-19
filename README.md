@@ -68,7 +68,7 @@ To start understanding the files more, start here: `/src/app/product-list` --> t
 
 ```ts
 export class ProductAlertsComponent implements OnInit {
-  // the @Input() decorator indicates that the [product] prop data passed in from the component's parent
+  // the @Input() decorator indicates that the [product] prop data is passed in from the component's parent
   @Input() product;
   // the @Output() decorator combined with EventEmitter
   // lets us trigger an event with the [notify] prop changes,
