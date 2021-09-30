@@ -100,3 +100,7 @@ For example, associating a URL path with a component.
 ## Deployment/building/hosting, using Firebase, etc.
 
 https://angular.io/start/start-deployment
+
+## More notes
+
+https://github.com/hchiam/learning-front-end-frameworks
