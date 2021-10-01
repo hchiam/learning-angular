@@ -103,4 +103,4 @@ https://angular.io/start/start-deployment
 
 ## More notes
 
-https://github.com/hchiam/learning-front-end-frameworks
+https://github.com/hchiam/learning-front-end-frameworks/tree/main/angular
