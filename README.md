@@ -97,7 +97,99 @@ I didn't have to explicitly import TS or HTML files. It just figured it out by t
 
 For example, associating a URL path with a component.
 
+I needed some help getting my local `my-app` to work: <https://www.smashingmagazine.com/2018/11/a-complete-guide-to-routing-in-angular/>
 
+```bash
+cd my-app
+npm i
+ng serve
+# http://localhost:4200
+```
+
+```bash
+cd my-app
+ng g component
+```
+
+- http://localhost:4200/
+- http://localhost:4200/products/someID
+- http://localhost:4200/products/anotherID
+- http://localhost:4200/products/otherID
+
+```html
+<router-outlet></router-outlet>
+```
+
+```html
+<div *ngFor="let product of products">
+  <a [title]="'Product name'" [routerLink]="['/products', product.id]"
+    >{{ product.name }}</a
+  >
+</div>
+```
+
+```html
+<p>{{ product.description }}</p>
+<a [title]="'Back to main'" [routerLink]="['/']">Back to main</a>
+```
+
+```ts
+import { RouterModule } from "@angular/router";
+
+import { ProductDetailsComponent } from "./product-details/product-details.component";
+import { ProductListComponent } from "./product-list/product-list.component";
+
+// ...
+
+@NgModule({
+  declarations: [AppComponent, ProductDetailsComponent, ProductListComponent],
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot([
+      { path: "", component: ProductListComponent },
+      { path: "products/:productId", component: ProductDetailsComponent },
+    ]),
+  ],
+  providers: [],
+  bootstrap: [AppComponent, ProductListComponent, ProductDetailsComponent],
+})
+export class AppModule {}
+```
+
+```ts
+import { Component, OnInit } from "@angular/core";
+
+@Component({
+  selector: "app-product-list",
+  templateUrl: "./product-list.component.html",
+  styleUrls: ["./product-list.component.css"],
+})
+export class ProductListComponent implements OnInit {
+  products: any[];
+
+  constructor() {
+    this.products = [
+      {
+        id: "someID",
+        name: "Some product name",
+        description: "Some product description.",
+      },
+      {
+        id: "anotherID",
+        name: "Another product name",
+        description: "Another product description.",
+      },
+      {
+        id: "otherID",
+        name: "Other product name",
+        description: "Other product description.",
+      },
+    ];
+  }
+
+  ngOnInit(): void {}
+}
+```
 
 ## Deployment/building/hosting, using Firebase, etc.
 
