@@ -93,9 +93,11 @@ I didn't have to explicitly import TS or HTML files. It just figured it out by t
 
 ## Routing/Navigation
 
-https://angular.io/start/start-routing
+<https://angular.io/start/start-routing>
 
 For example, associating a URL path with a component.
+
+
 
 ## Deployment/building/hosting, using Firebase, etc.
 
