@@ -15,6 +15,7 @@ Using [Angular CLI](https://cli.angular.io/):
 
 ```bash
 npm install -g @angular/cli
+# to start a new project "my-app" from scratch:
 ng new my-app
 cd my-app
 ng serve
