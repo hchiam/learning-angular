@@ -6,7 +6,7 @@ Angular comes with a CLI and comes with [TypeScript](https://www.typescriptlang.
 
 <https://angular.io/guide/what-is-angular>
 
-## Minimal:
+## Minimal setup from scratch
 
 <details>
 <summary>Click to expand/collapse:</summary>
@@ -31,11 +31,7 @@ npm install -g @angular/cli && ng new my-app && cd my-app && ng serve
 
 </details>
 
-## Older work:
-
-Following a YouTube tutorial for Angular 8: <https://github.com/hchiam/learning-angular8>
-
-## Longer intro tutorial:
+## Intro
 
 <details>
 <summary>Click to expand/collapse:</summary>
@@ -210,6 +206,10 @@ export class ProductListComponent implements OnInit {
 ## Deployment/building/hosting, using Firebase, etc.
 
 https://angular.io/start/start-deployment
+
+## Older notes
+
+Following a YouTube tutorial for Angular 8: <https://github.com/hchiam/learning-angular8>
 
 ## More notes
 
