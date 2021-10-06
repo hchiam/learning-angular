@@ -8,6 +8,9 @@ Angular comes with a CLI and comes with [TypeScript](https://www.typescriptlang.
 
 ## Minimal:
 
+<detail>
+<summary>Click to expand/collapse:</summary>
+
 Using [Angular CLI](https://cli.angular.io/):
 
 ```bash
@@ -25,11 +28,16 @@ npm install -g @angular/cli && ng new my-app && cd my-app && ng serve
 
 <http://localhost:4200>
 
+</detail>
+
 ## Older work:
 
 Following a YouTube tutorial for Angular 8: <https://github.com/hchiam/learning-angular8>
 
 ## Longer intro tutorial:
+
+<detail>
+<summary>Click to expand/collapse:</summary>
 
 Tutorial I'll be following: <https://angular.io/start>
 
@@ -91,7 +99,12 @@ You can generate a component with `ng generate component component-name` or with
 
 I didn't have to explicitly import TS or HTML files. It just figured it out by the consistent naming! I tried sibling folders under `/app` and also tried moving the child component's folder inside its parent component's folder, and it also worked! Just use `ng g component component-name`!
 
+</detail>
+
 ## Routing/Navigation
+
+<detail>
+<summary>Click to expand/collapse:</summary>
 
 <https://angular.io/start/start-routing>
 
@@ -190,6 +203,8 @@ export class ProductListComponent implements OnInit {
   ngOnInit(): void {}
 }
 ```
+
+</detail>
 
 ## Deployment/building/hosting, using Firebase, etc.
 
