@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  background: #333;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+a {
+  color: lightblue;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  display: block;
+  animation: fade-in 1s, slide-up 0.4s;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: lime;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(10px);
+  }
+}
