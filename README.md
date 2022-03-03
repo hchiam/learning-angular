@@ -1,4 +1,4 @@
-# Learning Angular (not AngularJS)
+# Learning Angular (not [AngularJS](https://github.com/hchiam/learning-angularjs))
 
 Just one of the things I'm learning. <https://github.com/hchiam/learning> and <https://github.com/hchiam/learning-frameworks>
 
